@@ -15,7 +15,7 @@ function Records() {
         .then(response => response.json())
         .then(result => setRecords(result)
         .catch(console.log))
-    })
+    },[])
 
     function addClick() {
         const now = new Date();
